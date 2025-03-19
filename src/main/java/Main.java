@@ -1,14 +1,13 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    System.out.println("Podaj ciag znakow: ");
+    Scanner scanner = new Scanner(System.in);
+    String input = scanner.nextLine();
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    System.out.println(input.toLowerCase());
+
+    scanner.close();
+  }
 }
